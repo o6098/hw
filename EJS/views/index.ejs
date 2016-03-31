@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/assets/style.css" type="text/css">
+  <title>網頁作業EJS</title>
+</head>
+<body>
+  <h1>各式咪哭黏土人</h1>
+  <div class = "row">
+    <div class="col-4 pic">
+      <ul>
+        <% for(var i=0; i<nendoroid.length; i++){ %>
+          <li class = "pic">
+            <a href="#">
+              <img src="assets/黏土人/<%= nendoroid[i] %>/01.jpg" alt="">
+
+              <h3>編號：<%= nendoroid[i] %></h3>
+            </a>
+          </li>
+        <% } %>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
